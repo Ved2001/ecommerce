@@ -1,5 +1,4 @@
-import product from '@/sanity_ecommerce/schemas/product';
-import React, { createContext, useContext, useState, useEffect } from 'react'
+import React, { createContext, useContext, useState } from 'react'
 import toast from 'react-hot-toast'
 
 
@@ -93,7 +92,6 @@ const StateContext = ({ children }) => {
         })
     }
 
-
     return (
         <Context.Provider value={{
             showCart,
@@ -117,5 +115,4 @@ const StateContext = ({ children }) => {
 }
 
 export const useStateContext = () => useContext(Context)
-
 export default StateContext
